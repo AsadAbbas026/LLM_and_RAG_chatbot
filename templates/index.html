@@ -1,0 +1,44 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chatbot - Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header class="hero-section">
+        <h1>Welcome to AI Chatbot</h1>
+        <p>Experience the power of Retrieval-Augmented Generation (RAG).</p>
+        <div class="cta-buttons">
+            <a href="/login" class="btn neon-green">Login</a>
+            <a href="/register" class="btn neon-pink">Register</a>
+        </div>
+    </header>
+    <section class="features">
+        <h2>Key Features</h2>
+        <div class="feature">
+            <img src="{{ url_for('static', filename='icons/feature1.jpg') }}" alt="Feature 1">
+            <p>RAG-powered responses</p>
+        </div>
+        <div class="feature">
+            <img src="{{ url_for('static', filename='icons/feature2.png') }}" alt="Feature 2">
+            <p>Personalized interactions</p>
+        </div>
+        <!-- Add more features as needed -->
+    </section>
+    <footer>
+        <ul class="footer-links">
+            <li><a href="/login">Login</a></li>
+            <li><a href="/register">Register</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+        <div class="social-icons">
+            <a href="#"><img src="{{ url_for('static', filename='icons/facebook.png') }}" alt="Facebook"></a>
+            <a href="#"><img src="{{ url_for('static', filename='icons/twitter.png') }}" alt="Twitter"></a>
+            <a href="https://www.linkedin.com/in/syed-asad-abbas-rizvi-590b06243/"><img src="{{ url_for('static', filename='icons/linkedin.png') }}" alt="LinkedIn"></a>
+        </div>
+    </footer>
+</body>
+</html>

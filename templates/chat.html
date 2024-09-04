@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chatbot - Chat</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header class="chat-header">
+        <div class="profile-icon">
+            <img src="{{ url_for('static', filename='images/profile.png') }}" alt="Profile Picture">
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Settings</button>
+            <div class="dropdown-content">
+                <a href="#">Account Settings</a>
+                <a href="#">Logout</a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Back to Upload Page Button -->
+    <div class="back-button-container">
+        <a href="/upload" class="btn neon-pink">Back to Upload Page</a>
+    </div>
+
+    <div class="chat-container">
+        <aside class="chat-sidebar">
+            <h3>Chat History</h3>
+            <ul class="chat-history" id="chat-history">
+                <!-- Chat history will be dynamically inserted here -->
+            </ul>
+        </aside>
+        <main class="chat-main">
+            <div class="chat-messages" id="chat-messages">
+                <!-- Chat messages will be dynamically inserted here -->
+            </div>
+            <div class="chat-input">
+                <input type="text" id="chat-input-field" placeholder="Type your message...">
+                <button class="btn neon-green" id="send-button">Send</button>
+            </div>
+        </main>
+    </div>
+    
+    <script src="{{ url_for('static', filename='js/chat.js') }}"></script>
+</body>
+</html>

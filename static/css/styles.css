@@ -1,0 +1,280 @@
+/* styles.css */
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a2e;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Buttons */
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.neon-green {
+    background-color: #39ff14;
+    color: #000;
+    box-shadow: 0 0 10px #39ff14, 0 0 20px #39ff14;
+}
+
+.neon-pink {
+    background-color: #ff007f;
+    color: #000;
+    box-shadow: 0 0 10px #ff007f, 0 0 20px #ff007f;
+}
+
+/* Hero Section */
+.hero-section {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(45deg, #0f0f1e, #1a1a2e);
+    color: #fff;
+}
+
+.cta-buttons a {
+    margin: 0 10px;
+}
+
+/* Features */
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+}
+
+.feature img {
+    width: 50px;
+}
+
+.feature p {
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    background: #0f0f1e;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.social-icons a img {
+    width: 30px;
+    margin: 0 5px;
+}
+
+/* Login & Registration Pages */
+.login-container, .register-container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background: #2e2e3e;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #000;
+    text-align: center;
+}
+
+.login-container input, .register-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+    background: #1a1a2e;
+    color: #fff;
+}
+
+.login-options, .register-options {
+    margin-top: 20px;
+}
+
+/* File Upload Page */
+.upload-container {
+    max-width: 600px;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.upload-box {
+    border: 2px dashed #39ff14;
+    padding: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.upload-instructions {
+    margin-top: 20px;
+}
+
+/* Chat Page */
+.chat-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background: #1a1a2e;
+    color: #fff;
+}
+
+.chat-container {
+    display: flex;
+}
+
+.chat-sidebar {
+    width: 300px;
+    background: #2e2e3e;
+    padding: 20px;
+    box-shadow: 0 0 10px #000;
+}
+
+.chat-history {
+    list-style: none;
+    padding: 0;
+}
+
+.chat-history li {
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #1a1a2e;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.chat-main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-messages {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.message {
+    margin-bottom: 10px;
+}
+
+.user-message {
+    text-align: right;
+}
+
+.bot-message p, .user-message p {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 20px;
+    max-width: 60%;
+}
+
+.bot-message p {
+    background: #1a1a2e;
+    color: #fff;
+}
+
+.user-message p {
+    background: #39ff14;
+    color: #000;
+}
+
+.chat-input {
+    padding: 20px;
+    background: #1a1a2e;
+    display: flex;
+}
+
+.chat-input input {
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    margin-right: 10px;
+    background: #2e2e3e;
+    color: #fff;
+}
+
+.chat-input button {
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+/* Contact Page Styles */
+.contact-header {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(45deg, #0f0f1e, #1a1a2e);
+    color: #fff;
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #2e2e3e;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #000;
+}
+
+.contact-container .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #e0e0e0;
+}
+
+.contact-container input[type="text"],
+.contact-container input[type="email"],
+.contact-container textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background: #1a1a2e;
+    color: #fff;
+}
+
+.contact-container textarea {
+    height: 150px;
+    resize: none;
+}
+
+.contact-container button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Styles for the Back to Upload Page Button */
+.back-button-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.back-button-container .btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+}

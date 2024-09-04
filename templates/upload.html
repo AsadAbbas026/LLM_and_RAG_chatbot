@@ -1,0 +1,23 @@
+<!-- upload.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chatbot - Upload Files</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="upload-container">
+        <h2>Upload Your Files</h2>
+        <form action="{{ url_for('upload') }}" method="post" enctype="multipart/form-data">
+            <div class="upload-box">
+                <p>Drag & Drop your files here or click to select files</p>
+                <input type="file" name="file" multiple>
+            </div>
+            <p class="upload-instructions">Accepted file types: .txt, .pdf, .docx. Max size: 5MB</p>
+            <button type="submit">Upload</button>
+        </form>
+    </div>
+</body>
+</html>
